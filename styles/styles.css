@@ -8,6 +8,12 @@
     --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: var(--primary-color);
     padding: 10px;
@@ -29,6 +35,8 @@ h1 {
 }
 
 main img {
+    /* you most likely will have other CSS declarations here */
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid var(--border-light);
@@ -37,6 +45,7 @@ main img {
 }
 
 aside {
+    position: relative;
     width: 20rem;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
@@ -44,6 +53,12 @@ aside {
     background-color: var(--bg-light);
     color: var(--text-dark);
     text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
 
 aside img {
@@ -55,8 +70,24 @@ p {
     padding: 0;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid var(--border-dark);
     text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
