@@ -25,6 +25,19 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
+}
+
+footer p {
+    color: var(--accent2-color);
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
@@ -62,6 +75,16 @@ article {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: #fff;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 4px;
 }
 
 .hero article img {
