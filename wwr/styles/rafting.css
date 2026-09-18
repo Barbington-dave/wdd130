@@ -1,9 +1,10 @@
 :root {
     --primary-color: #055a05;
-    --secordary-color: #f4a261;
+    --secondary-color: #f4a261;
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", "Georgia", serif --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -27,7 +28,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 nav,
@@ -52,7 +53,7 @@ article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -69,6 +70,6 @@ h1 {
 }
 
 .social-icon {
-    width: 50px;
+    width: 70px;
     height: auto;
 }
