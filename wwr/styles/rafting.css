@@ -76,7 +76,7 @@ footer p {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 nav,
@@ -102,7 +102,6 @@ article {
 }
 
 .hero h1 {
-    position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -114,17 +113,109 @@ article {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
+    top: 20px;
     left: 20px;
     right: 20px;
     background-color: rgba(255, 255, 255, 0.85);
-    padding: 15px;
+    color: #333;
+    padding: 5px;
+    text-align: center;
     border-radius: 4px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
+}
+
+/* Home Grid Layout */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h2 {
+    margin: 15px 0 10px;
+    font-size: 1.5rem
+}
+
+.card p {
+    padding: 0 15px;
+    color: #555;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: var(--accent1-color, #2b4c7e);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.newsletter form {
+    max-width: 500px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+.newsletter fieldset {
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.newsletter legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.form-item {
+    margin-bottom: 15px;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-item input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.newsletter button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: var(--secondary-color, #e0a96d);
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
 }
 
 /* --- HISTORY SECTION --- */
